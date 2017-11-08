@@ -25,7 +25,7 @@ namespace Lab5.ConsoleApp.Encapsulation
 
         public void RaiseStandardSalary()
         {
-            Salary = baseSalary * raisePercentage;
+            Salary = (raisePercentage * baseSalary) + baseSalary;
         }
 
         public void RaiseCustomSalary(double amount)
@@ -40,7 +40,7 @@ namespace Lab5.ConsoleApp.Encapsulation
 
         public void DispayStatus()
         {
-            Console.WriteLine($"Name {Name} earns {baseSalary}");
+            Console.WriteLine($"Name {Name} earns {Salary}");
         }
     }
 }
