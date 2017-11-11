@@ -9,23 +9,42 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
+            PolymorphismExample2();
         }
+
+        static void Work1()
+        {
+            Employee employee1 = new Employee(1, "eduard", 2000);
+            employee1.DisplayStatus();
+
+            string name = employee1.GetName();
+            employee1.SetName("iulian are 50 de mere si pere");
+
+            Console.ReadKey();
+        }
+
 
         #region Encapsulation
 
         static void EncapsulationWork()
         {
-            EmployeeWithProperties employee1 = new EmployeeWithProperties(1, "eduard", 1000);
-            employee1.DisplayStatus();
+            //EmployeeWithProperties employee1 = new EmployeeWithProperties(1, "eduard", 1000);
+            //employee1.DisplayStatus();
+            //employee1.Name = "Iulian";
 
-            EmployeeWithProperties employee2 = new EmployeeWithProperties(2, "Eduard", 1000, 123454343);
-            //employee2.CNP = 1231231;
-            employee2.DisplayFullStatus();
+            //EmployeeWithProperties employee2 = new EmployeeWithProperties(2, "Eduard", 1000, 123454343);
+            ////employee2.CNP = 1231231;
+            //employee2.DisplayFullStatus();
+            //Console.WriteLine(employee2.CNP);
 
-            EmployeeAutomaticProperties employee3 = new EmployeeAutomaticProperties(3, "Iulian", 1500);
-            employee3.DisplayStatus();
-            employee3.DisplayFullStatus();
+            //EmployeeAutomaticProperties employee3 = new EmployeeAutomaticProperties(3, "Iulian", 1500);
+            //employee3.DisplayStatus();
+            //employee3.DisplayFullStatus();
+
+            EmployeeWithBenefits employee4 = new EmployeeWithBenefits("Eduard", 1000);
+            employee4.DispayInitalStatus();
+            employee4.RaiseStandardSalary();
+            employee4.DispayStatus();
 
             Console.ReadKey();
         }
@@ -40,7 +59,7 @@ namespace Lab5.ConsoleApp
             Point point2 = new Point(3, 3);
             point2.DisplayStatus();
 
-            Point point3 = new Point() { X = 4, Y = 4 };
+            Point point3 = new Point() { Y = 9 };
             point3.DisplayStatus();
 
             Console.ReadKey();
@@ -103,6 +122,7 @@ namespace Lab5.ConsoleApp
             rs7.Display();
             rs7.SpeedUp(20);
             Console.ReadKey();
+            rs7.CurrentSpeed = 54;
 
             Car m4 = new Car("M4", 150);
             m4.SpeedUp(10);
@@ -121,8 +141,12 @@ namespace Lab5.ConsoleApp
             Console.WriteLine($"Emp: {employee1.Name} earns {employee1.Salary}");
 
             Manager manager1 = new Manager("Iulian", 3000.25);
-            employee1.GiveBonus(200);
-            employee1.ToString();
+            manager1.GiveBonus(200);
+            Console.WriteLine(manager1.ToString());
+
+            Accounting accounting1 = new Accounting("viorica", 1500);
+            accounting1.GiveBonus(250);
+            Console.WriteLine($"Emp: {accounting1.Name} earns {accounting1.Salary}");
 
             Console.ReadKey();
         }

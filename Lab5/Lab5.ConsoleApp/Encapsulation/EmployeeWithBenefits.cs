@@ -8,6 +8,16 @@ namespace Lab5.ConsoleApp.Encapsulation
 
         public readonly double baseSalary;
 
+        public double RaisePercentage
+        {
+            get { return raisePercentage; }
+        }
+
+        public double BaseSalary
+        {
+            get { return baseSalary; }
+        }
+
         public string Name { get; set; }
 
         public double Salary { get; set; }

@@ -34,7 +34,7 @@ namespace Lab5.ConsoleApp.Encapsulation
         public int Id
         {
             get { return empId; }
-            set { empId = value; }
+            set { if (value % 2 == 0) empId = value; else Console.WriteLine("Not par!"); }
         }
 
         public float CurrentPay

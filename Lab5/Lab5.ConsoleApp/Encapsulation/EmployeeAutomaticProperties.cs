@@ -29,7 +29,7 @@ namespace Lab5.ConsoleApp.Encapsulation
             }
         }
 
-        public int Id { get;set; }
+        public int Id { get; set; }
 
         public float CurrentPay { get; set; }
 
