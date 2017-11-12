@@ -9,7 +9,9 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
+            Autovehicul a1 = new Autovehicul();
+            a1.GetFromInput();
+            Console.WriteLine(a1);
         }
 
         #region Encapsulation

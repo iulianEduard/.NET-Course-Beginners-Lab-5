@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autovehicul.cs" />
     <Compile Include="Encapsulation\Employee.cs" />
     <Compile Include="Encapsulation\EmployeeAutomaticProperties.cs" />
     <Compile Include="Encapsulation\EmployeeWithBenefits.cs" />
