@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Autovehicul.cs" />
+    <Compile Include="Autobuz.cs" />
+    <Compile Include="Motocicleta.cs" />
     <Compile Include="Encapsulation\Employee.cs" />
     <Compile Include="Encapsulation\EmployeeAutomaticProperties.cs" />
     <Compile Include="Encapsulation\EmployeeWithBenefits.cs" />
