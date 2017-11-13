@@ -10,6 +10,7 @@ namespace Lab5.ConsoleApp
         static void Main(string[] args)
         {
             InheritanceExample3();
+
         }
 
         #region Encapsulation

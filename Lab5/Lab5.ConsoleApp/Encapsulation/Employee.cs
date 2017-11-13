@@ -4,15 +4,18 @@ namespace Lab5.ConsoleApp.Encapsulation
 {
     public class Employee
     {
+        //Field data
         private string empName;
         private int empId;
         private float empCurrPay;
 
+        //Constructors
         public Employee()
         {
 
         }
 
+        //Methods
         public Employee(int id, string name, float currentPay)
         {
             empId = id;
