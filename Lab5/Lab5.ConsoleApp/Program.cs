@@ -1,6 +1,7 @@
 ﻿using Lab5.ConsoleApp.Encapsulation;
 using Lab5.ConsoleApp.Inheritance;
 using Lab5.ConsoleApp.Polymorphism;
+using Lab5.ConsoleApp._3in1;
 using System;
 
 namespace Lab5.ConsoleApp
@@ -9,9 +10,45 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
 
+            PlayTime();
+            Console.ReadKey();
         }
+
+        static void PlayTime()
+        {
+            Toy toy1 = new Toy("6+", 4, "Plastic", "Batman");
+            toy1.Power(2, 4);
+            toy1.Activity();
+            toy1.Display();
+
+            Toy toy2 = new Toy();
+            toy2.Type = "3+";
+            toy2.Buttons = 1;
+            toy2.Name = "Duck";
+            toy2.Power(0,0);
+            toy2.Display();
+
+            Toy toy3 = new Toy() { Name = "Drupy, the master detective", Buttons = 10, Type = "Monkey" };
+            toy3.Display();
+        
+       
+            Robot robot = new Robot("10+", 1, "Plastic", "Robocop");
+            robot.SetName("Doctor Who");
+            robot.Activity();
+
+            Plane plane = new Plane();
+            plane.Activity();
+            plane.Engine(4);
+            
+            Drone drone = new Drone();
+            drone.Activity();
+            drone.Engine(8);
+            
+        }
+
+    
+
 
         #region Encapsulation
 
@@ -104,7 +141,7 @@ namespace Lab5.ConsoleApp
             rs7.Display();
             rs7.SpeedUp(20);
             Console.ReadKey();
-
+            
             Car m4 = new Car("M4", 150);
             m4.SpeedUp(10);
             m4.Display();
@@ -130,12 +167,13 @@ namespace Lab5.ConsoleApp
 
         static void PolymorphismExample2()
         {
-            SciFi sciFi1 = new SciFi("Dark Tower", "Stephan King", 500, 9.8);
+          SciFi sciFi1 = new SciFi("Dark Tower", "Stephan King", 500, 9.8);
             sciFi1.DisplayBook();
 
             Drama drama1 = new Drama("Enimga Otiliei", "George Calinescu", 230, 8.5);
             drama1.Display();
             drama1.DisplayBook();
+            
 
             Console.ReadKey();
         }

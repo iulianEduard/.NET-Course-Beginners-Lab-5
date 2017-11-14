@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="3in1\Drone.cs" />
+    <Compile Include="3in1\Plane.cs" />
+    <Compile Include="3in1\Robot.cs" />
+    <Compile Include="3in1\Toy.cs" />
     <Compile Include="Encapsulation\Employee.cs" />
     <Compile Include="Encapsulation\EmployeeAutomaticProperties.cs" />
     <Compile Include="Encapsulation\EmployeeWithBenefits.cs" />

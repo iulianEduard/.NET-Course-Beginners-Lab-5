@@ -50,7 +50,7 @@ namespace Lab5.ConsoleApp.Inheritance
 
     sealed class Apple : Phone
     {
-        public Apple(string model, string operatingSystem, double screenSize) : base("Apple", model, screenSize, operatingSystem)
+        public Apple(string model, string operatingSystem, double screenSize) : base("AppleCidrus", model, screenSize, operatingSystem)
         {
         }
 
