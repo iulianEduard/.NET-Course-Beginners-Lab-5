@@ -24,5 +24,6 @@ namespace Lab5.ConsoleApp.Polymorphism
         {
             return $"Object -> Employee {Name} earns {Salary}";
         }
+
     }
 }

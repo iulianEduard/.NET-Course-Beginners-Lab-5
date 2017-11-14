@@ -3,7 +3,7 @@
 namespace Lab5.ConsoleApp.Polymorphism
 {
     public abstract class Book
-    {
+        {
         public string Name { get; set; }
 
         public string Author { get; set; }

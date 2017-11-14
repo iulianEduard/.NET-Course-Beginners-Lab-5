@@ -9,7 +9,17 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
+            IndexArray();
+        }
+        static void Work1()
+        {
+            Employee employee1 = new Employee(1, "eduard", 2000);
+            employee1.DisplayStatus();
+
+            string name = employee1.GetName();
+            employee1.SetName("iulian are 50 de mere si pere");
+
+            Console.ReadKey();
         }
 
         #region Encapsulation
@@ -83,6 +93,7 @@ namespace Lab5.ConsoleApp
             samsung.RezolutionWidth = 1440;
             samsung.Display();
 
+
             Console.ReadKey();
         }
 
@@ -140,5 +151,102 @@ namespace Lab5.ConsoleApp
         }
 
         #endregion Polymorphism
+
+        static void PolymorphismElev()
+        {
+            Baiat baiat = new Baiat("Relu", "Popescu", 15, 8, 9);
+            baiat.ToString();
+
+            Fata fata = new Fata("Roxana", "Ionescu", 17, 8, 12);
+            fata.Show();
+            fata.ToString();
+
+            Console.ReadKey();
+        }
+
+        static void InheritanceElev()
+        {
+            Baiat baiat = new Baiat("Robert", "Pop", 10, 7, 3);
+            baiat.Show();
+            baiat.Nume = "Relu";
+            baiat.Scoala = 9;
+            baiat.Varsta = 16;
+            baiat.Clasa = 10;
+            baiat.ShowMe();
+
+            Console.ReadKey();
+        }
+        static void InheriteanceElev2()
+        {
+
+        }
+
+        static void ExempluAutovehicul()
+        {
+            Tir tir = new Tir("Volvo", 6, 90, 180, 2);
+            tir.CresteViteza(40);
+            tir.Show();
+            tir.SetCaiPutere(60);
+            tir.Show();
+
+            Console.ReadLine();
+
+        }
+
+        static void MediaPonderala(int values)
+        {
+           
+
+            int x = 0;
+            int n = 0;
+            int mediaponderala = 0;
+            double[] array = new double[x];
+            double[] ponderea = new double[n];
+
+            for(int i = 0; i < array.Length; i++)
+            {
+                mediaponderala = ((array[i] * ponderea[i])) / (ponderea.Sum[i]);
+            }
+            Console.ReadLine();
+        }
+
+        static void IndexArray(int[] array, int value)
+        {
+           for(int i = 0; i < array.Length; i++)
+            {
+                if(array[i] == 0)
+                {
+                    Console.WriteLine(i); ;
+                }
+            }
+           foreach(int c in array)
+            {
+                Console.WriteLine(c);
+            }
+            Console.ReadLine();
+        }
+
+        static void Primenumbers()
+        {
+            int prime = 0;
+
+            for(int i = 0; i <= 100; i++)
+            {
+                for(int j = 2; j <= 100; j++)
+                {
+                    if(i % j == 0)
+                    {
+                        prime++;
+                    }
+                    if(prime == 1)
+                    {
+                        Console.WriteLine(i);
+                    }
+                    prime = 0;
+                }
+                Console.ReadLine();
+            }
+        }
     }
+
 }

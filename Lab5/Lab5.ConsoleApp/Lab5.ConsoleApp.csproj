@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Autovehicul.cs" />
     <Compile Include="Encapsulation\Employee.cs" />
     <Compile Include="Encapsulation\EmployeeAutomaticProperties.cs" />
     <Compile Include="Encapsulation\EmployeeWithBenefits.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Polymorphism\Manager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemaLab5.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
