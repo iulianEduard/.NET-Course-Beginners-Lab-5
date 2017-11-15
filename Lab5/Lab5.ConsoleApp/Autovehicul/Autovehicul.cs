@@ -15,6 +15,8 @@ namespace Lab5.ConsoleApp.Autovehicul
         private string fuel;
         private double weight;
 
+        //Console.WriteLine(""); 
+
         public int Nrwheels
         {
             get { return nrwheels; }
