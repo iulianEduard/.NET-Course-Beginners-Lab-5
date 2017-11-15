@@ -5,11 +5,16 @@ using System;
 
 namespace Lab5.ConsoleApp
 {
+
     class Program
     {
         static void Main(string[] args)
         {
-            IndexArray();
+            
+            Aritmetica ar = new Aritmetica();
+            //ar.MediaGeometrica();
+            //ar.MediaPonderala();
+            ar.Primenumbers();
         }
         static void Work1()
         {
@@ -193,60 +198,8 @@ namespace Lab5.ConsoleApp
 
         }
 
-        static void MediaPonderala(int values)
-        {
-           
-
-            int x = 0;
-            int n = 0;
-            int mediaponderala = 0;
-            double[] array = new double[x];
-            double[] ponderea = new double[n];
-
-            for(int i = 0; i < array.Length; i++)
-            {
-                mediaponderala = ((array[i] * ponderea[i])) / (ponderea.Sum[i]);
-            }
-            Console.ReadLine();
-        }
-
-        static void IndexArray(int[] array, int value)
-        {
-           for(int i = 0; i < array.Length; i++)
-            {
-                if(array[i] == 0)
-                {
-                    Console.WriteLine(i); ;
-                }
-            }
-           foreach(int c in array)
-            {
-                Console.WriteLine(c);
-            }
-            Console.ReadLine();
-        }
-
-        static void Primenumbers()
-        {
-            int prime = 0;
-
-            for(int i = 0; i <= 100; i++)
-            {
-                for(int j = 2; j <= 100; j++)
-                {
-                    if(i % j == 0)
-                    {
-                        prime++;
-                    }
-                    if(prime == 1)
-                    {
-                        Console.WriteLine(i);
-                    }
-                    prime = 0;
-                }
-                Console.ReadLine();
-            }
-        }
+        
+       
     }
 
 }
