@@ -8,14 +8,14 @@ namespace Lab5.ConsoleApp
 {
     public class Autovehicul
     {
-      public string Make { get; set; }
-      public string Engine { get; set; }
-      public int NumberOfDoors { get; set; }
-      public string Color { get; set; }
-      public string Year { get; set; }
-      public double CurrentValue { get; set; }
+        public string Make { get; set; }
+        public string Engine { get; set; }
+        public int NumberOfDoors { get; set; }
+        public string Color { get; set; }
+        public string Year { get; set; }
+        public double CurrentValue { get; set; }
 
-        public Autovehicul(string make,string engine,int numberOfDoors,string color,string year,double currentValue)
+        public Autovehicul(string make, string engine, int numberOfDoors, string color, string year, double currentValue)
         {
             Make = make;
             Engine = engine;
@@ -32,5 +32,11 @@ namespace Lab5.ConsoleApp
         {
             return Year;
         }
-    }
+
+        public void Display()
+        {
+            Console.WriteLine($"Autovehiculul {Make} cu motor : {Engine} are {NumberOfDoors} usi");
+            Console.WriteLine($"Autovehiculul e din {Year} si valoreaza {CurrentValue}");
+        }
+    }  
 }

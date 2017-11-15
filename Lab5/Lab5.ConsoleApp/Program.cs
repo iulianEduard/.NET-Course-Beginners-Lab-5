@@ -165,8 +165,8 @@ namespace Lab5.ConsoleApp
         static void MyExample()
         {
             Autovehicul autovehicul1 = new Autovehicul("Smart","1.9Tdi",5,"Red","2012",3000);
-
-            Console.ReadLine();
+            autovehicul1.Display();
+            Console.ReadKey();
         }
     }
 }
