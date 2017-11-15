@@ -2,6 +2,7 @@
 using Lab5.ConsoleApp.Inheritance;
 using Lab5.ConsoleApp.Polymorphism;
 using Lab5.ConsoleApp._3in1;
+using Lab5.ConsoleApp.Autovehicul;
 using System;
 
 namespace Lab5.ConsoleApp
@@ -10,8 +11,8 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-
-            PlayTime();
+           // DrivingTest();
+           // PlayTime();
             Console.ReadKey();
         }
 
@@ -47,8 +48,42 @@ namespace Lab5.ConsoleApp
             
         }
 
-    
 
+        static void DrivingTest()
+        {
+            Truck truck = new Truck() { Nrwheels = 8, Weight = 5000, Brand = "Papa Bear", Fuel = "Gas", Speed = 197, Gearbox = "Manual" };
+          
+           // truck.Charge();
+          //  truck.HighWay();
+          //  truck.Resting();
+          //  truck.Driving();
+            truck.Display();
+            
+
+           
+            Truck truck1 = new Truck();
+            truck1.Gearbox = "Automatic";
+            truck1.Fuel = "Gas";
+            truck1.Brand = "VVV";
+            truck1.Nrwheels = 8;
+            truck1.Weight = 9000;
+            truck1.Speed = 100;
+            truck1.Resting();
+            truck1.Display();
+            
+
+            Motorcycle motorcycle = new Motorcycle();
+            motorcycle.Brand = "Victory";
+            motorcycle.Fuel = "Diesel";
+            motorcycle.Gearbox = "Automatic";
+            motorcycle.Nrwheels = 2;
+            motorcycle.Speed = 160;
+            motorcycle.Weight = 600;
+            motorcycle.Pass();
+            motorcycle.Display();
+            
+            
+        }
 
         #region Encapsulation
 
