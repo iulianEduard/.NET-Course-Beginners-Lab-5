@@ -46,6 +46,10 @@ namespace Lab5.ConsoleApp.Inheritance
 
     public class Samsung : Phone
     {
+        public void DoWork()
+        {
+            Display();
+        }
     }
 
     sealed class Apple : Phone

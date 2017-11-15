@@ -3,15 +3,27 @@ using Lab5.ConsoleApp.Inheritance;
 using Lab5.ConsoleApp.Polymorphism;
 using System;
 
+
 namespace Lab5.ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
+            MyExample();
+
         }
 
+        static void Work1()
+        {
+            Employee employee1 = new Employee(1, "andy", 1000);
+            employee1.DisplayStatus();
+
+            string name = employee1.GetName();
+            employee1.SetName("andrei are 50 de mere si pere");
+
+            Console.ReadKey();
+        }
         #region Encapsulation
 
         static void EncapsulationWork()
@@ -26,6 +38,11 @@ namespace Lab5.ConsoleApp
             EmployeeAutomaticProperties employee3 = new EmployeeAutomaticProperties(3, "Iulian", 1500);
             employee3.DisplayStatus();
             employee3.DisplayFullStatus();
+
+            EmployeeWithBenefits employee4 = new EmployeeWithBenefits("Eduard", 1000);
+            employee4.DispayInitalStatus();
+            employee4.RaiseStandardSalary();
+            employee4.DispayStatus();
 
             Console.ReadKey();
         }
@@ -140,5 +157,17 @@ namespace Lab5.ConsoleApp
         }
 
         #endregion Polymorphism
+
+
+        
+       
+        
+        static void MyExample()
+        {
+            Autovehicul autovehicul1 = new Autovehicul("Smart","1.9Tdi",5,"Red","2012",3000);
+
+            Console.ReadLine();
+        }
     }
 }
+
