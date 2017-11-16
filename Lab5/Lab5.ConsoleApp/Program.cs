@@ -10,7 +10,7 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            MyExample();
+            MediaPonderatasiMediaGeometrica();
 
         }
 
@@ -159,15 +159,62 @@ namespace Lab5.ConsoleApp
         #endregion Polymorphism
 
 
-        
-       
-        
+
+
+
         static void MyExample()
         {
-            Autovehicul autovehicul1 = new Autovehicul("Smart","1.9Tdi",5,"Red","2012",3000);
+            Autovehicul autovehicul1 = new Autovehicul("Smart", "1.9Tdi", 5, "Red", "2012", 3000);
             autovehicul1.Display();
             Console.ReadKey();
+
+            Autovehicul Mercedes = new Autovehicul("Cls", "2.0cdi", 5, "Black", "2015", 4000);
+            Mercedes.Display();
+            Console.ReadKey();
+        }
+
+        static void ObiectulMeu()
+        {
+            Nike nike1 = new Nike();
+            nike1.Display();
+            nike1.Name = "Matrix";
+            nike1.Firma = "by Nike";
+            nike1.Culoare = "Orange";
+            nike1.Inaltime = 40;
+            nike1.Latime = 15;
+            nike1.Marime = 55;
+            nike1.Display();
+
+            Console.ReadKey();
+            
+            
+        }
+        static void MediaPonderatasiMediaGeometrica()
+        {
+            double a, b, c;
+            Console.WriteLine("Introduceti primul numar");
+
+            if (!double.TryParse(Console.ReadLine(), out a))
+                throw new FormatException("Format incorect");
+
+            Console.WriteLine("Introduceti al doilea numar");
+
+            if (!double.TryParse(Console.ReadLine(), out b))
+                throw new FormatException("Format incorect");
+
+            Console.WriteLine("Introduceti al treilea numar");
+
+            if (!double.TryParse(Console.ReadLine(), out c))
+                throw new FormatException("Format incorect");
+
+            double prod = a * b * c;
+            if (prod < 0)
+                Console.WriteLine("Media geometrica se aplica doar pentru numere pozitive");
+            else
+                Console.WriteLine("Media geometrica a celor 3 numere este {0}", Math.Pow(prod, (1.0 / 3)));
+
         }
     }
+
 }
 

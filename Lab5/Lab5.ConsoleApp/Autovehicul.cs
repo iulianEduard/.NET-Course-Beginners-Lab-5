@@ -38,5 +38,8 @@ namespace Lab5.ConsoleApp
             Console.WriteLine($"Autovehiculul {Make} cu motor : {Engine} are {NumberOfDoors} usi");
             Console.WriteLine($"Autovehiculul e din {Year} si valoreaza {CurrentValue}");
         }
+    
+        
     }  
 }
+

@@ -48,6 +48,7 @@
     <Compile Include="Encapsulation\EmployeeWithBenefits.cs" />
     <Compile Include="Encapsulation\EmployeeWithProperties.cs" />
     <Compile Include="Encapsulation\Point.cs" />
+    <Compile Include="Ghiozdan.cs" />
     <Compile Include="Inheritance\Car.cs" />
     <Compile Include="Inheritance\Phone.cs" />
     <Compile Include="Polymorphism\Book.cs" />
