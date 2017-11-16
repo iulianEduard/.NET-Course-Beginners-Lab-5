@@ -45,7 +45,7 @@ namespace Lab5.ConsoleApp.Autovehicul
         {
             get { return gearbox; }
 
-            /*  set
+             set
               {
                   switch (value)
                   {
@@ -69,9 +69,9 @@ namespace Lab5.ConsoleApp.Autovehicul
                           break;
 
                   }
-              } */
+              } 
 
-            set { gearbox = value; }
+            //set { gearbox = value; }
         }
         
 

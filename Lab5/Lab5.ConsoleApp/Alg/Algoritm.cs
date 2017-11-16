@@ -37,15 +37,14 @@ namespace Lab5.ConsoleApp.Alg
              mponder = numarator / sumaponderi;
              Console.WriteLine("Media ponderata : {0}", mponder);
 
-            Console.WriteLine(val.Length);
-            int l = val.Length;
-             double a = 1 / l;
-            
-            Console.WriteLine(a);
+
+
+           
+           
              mgeom = Math.Pow(produs, (1 / val.Length));
              Console.WriteLine("Media geometrica : {0}", mgeom);
 
-            
+           
          }
          
 
@@ -132,5 +131,89 @@ namespace Lab5.ConsoleApp.Alg
             }
         }
 
+
+        public void BubbleBath(params int[] nr)
+        {
+            int a = 0;
+            int schimbator = 0;
+
+            Console.WriteLine("Numerele introduse:");
+            for (int i = 0; i < nr.Length; i++)
+            {
+                Console.Write(nr[i] + " ");
+            }
+            Console.WriteLine();
+
+
+            do
+            {
+                a = 0;
+                for (int i = 0; i < nr.Length - 1; i++)
+                    if (nr[i] > nr[i + 1])
+                    {
+                        schimbator = nr[i];
+                        nr[i] = nr[i + 1];
+                        nr[i + 1] = schimbator;
+                        a = 1;
+                    }
+            }
+            while (a == 1);
+            for (int i = 0; i < nr.Length; i++)
+            {
+                Console.Write(nr[i] + " ");
+            }
+            Console.WriteLine();
+            do
+            {
+                a = 0;
+                for (int i = 0; i < nr.Length - 1; i++)
+                    if (nr[i] < nr[i + 1])
+                    {
+                        schimbator = nr[i];
+                        nr[i] = nr[i + 1];
+                        nr[i + 1] = schimbator;
+                        a = 1;
+                    }
+            }
+            while (a == 1);
+            for (int i = 0; i < nr.Length; i++)
+            {
+                Console.Write(nr[i] + " ");
+            }
+
+        }
+
+        // 		$exception	error CS0103: The name '$exception' does not exist in the current context	
+
+        public void MandM(params int [] val)
+        {
+            int min = 0;
+            int aux = 0;
+            int k;
+
+            for (int i = 0; i < val.Length-1; i++)
+            {
+                min = val[i];
+                k = i;
+                for (int j = i + 1; j < val.Length; j++)
+                    if (val[j] < min)
+                    {
+                        min = val[j];
+                        k = j;
+                    }
+                aux = val[i];
+                val[i] = val[k];
+                val[k] = aux;
+            }
+
+            for (int i = 0; i < val.Length; i++)
+            {
+                Console.WriteLine(val[i]);
+            }
+        }
+
+
+       
+        
     }
 }

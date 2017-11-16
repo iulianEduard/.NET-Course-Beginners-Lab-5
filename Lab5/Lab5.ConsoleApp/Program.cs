@@ -12,7 +12,7 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            // DrivingTest();
+            //DrivingTest();
             // PlayTime();
             Mathmathmath();
             Console.ReadKey();
@@ -21,11 +21,18 @@ namespace Lab5.ConsoleApp
         static void Mathmathmath()
         {
             Algoritm algoritm1 = new Algoritm();
-            algoritm1.Average(1, 2, 3);
+            //algoritm1.Average(1, 2, 3);
 
-          //  algoritm1.Verif(4,2,2,10,2,292,1);
+            //algoritm1.Verif(4,2,2,10,2,292,1);
 
             //algoritm1.SumaNrPrim();
+
+            // algoritm1.MandM(2, 4, 8, 9, 3, 2, 21);
+            // algoritm1.Insertion(10, 9, 2, 1, 7);
+
+            int[] val = new int[] { 9, 1, 3, 5, 6 };
+            
+
 
             
         }
