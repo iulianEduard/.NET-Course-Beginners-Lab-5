@@ -9,8 +9,67 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-            InheritanceExample3();
+            RobotTime();
+            Numbers();
+            ArrayOfNumbers();
+            //InheritanceExample3();
+            Console.ReadKey();
         }
+
+        static void RobotTime()
+        {
+            Robot2 robot2 = new Robot2("Robogait", "Treadmill speed: 10 km/h", 2, 3);
+            robot2.Width = 3;
+            robot2.Height = 5;
+            robot2.Show();
+            robot2.HowManyButtons(1);
+
+        }
+
+        static void Numbers()
+        {
+            {
+                int sumaNumerelor = 0;
+                Console.WriteLine("\nCate numere doriti sa introduceti ?");
+                int arraySize = int.Parse(Console.ReadLine());
+
+                Console.WriteLine($"\nIntroduceti {arraySize} numere: ");
+                
+                for (int i = 0; i < arraySize; i++)
+                {
+                    Console.WriteLine("Introduceti numerele: ");
+                    int numerele = Convert.ToInt32(Console.ReadLine());
+                    sumaNumerelor += numerele;
+                }
+                double mediaPonderata = sumaNumerelor / arraySize;
+                Console.WriteLine("Media ponderata: " + mediaPonderata);
+                Console.ReadLine();
+            }
+        }
+
+        static void ArrayOfNumbers()
+        {
+            int[] numberCheck = new int[10];
+            Console.WriteLine("Introduceti 10 numere: ");
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Number {0}: ", i + 1);
+                numberCheck[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Introduceti oirce numar pentru a verifica daca numarul exista deja: ");
+            int userInput = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < 10; i++)
+            {
+                if (userInput == numberCheck[i])
+                {
+                    Console.WriteLine("Numarul a fost gasit.");
+                    break;
+                }
+            }
+        }
+        
 
         #region Encapsulation
 
@@ -109,6 +168,8 @@ namespace Lab5.ConsoleApp
             m4.Display();
             Console.ReadKey();
         }
+
+        
 
         #endregion Inheritance
 
