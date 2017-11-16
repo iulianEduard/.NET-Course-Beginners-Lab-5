@@ -15,7 +15,7 @@ namespace Lab5.ConsoleApp.Autovehicul
         private string fuel;
         private double weight;
 
-        //Console.WriteLine(""); 
+        
 
         public int Nrwheels
         {
@@ -47,7 +47,7 @@ namespace Lab5.ConsoleApp.Autovehicul
 
             /*  set
               {
-                  switch (gearbox)
+                  switch (value)
                   {
                       case "Manual":
                           {

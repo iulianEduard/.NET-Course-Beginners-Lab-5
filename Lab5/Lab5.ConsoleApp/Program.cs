@@ -3,6 +3,7 @@ using Lab5.ConsoleApp.Inheritance;
 using Lab5.ConsoleApp.Polymorphism;
 using Lab5.ConsoleApp._3in1;
 using Lab5.ConsoleApp.Autovehicul;
+using Lab5.ConsoleApp.Alg;
 using System;
 
 namespace Lab5.ConsoleApp
@@ -11,9 +12,22 @@ namespace Lab5.ConsoleApp
     {
         static void Main(string[] args)
         {
-           // DrivingTest();
-           // PlayTime();
+            // DrivingTest();
+            // PlayTime();
+            Mathmathmath();
             Console.ReadKey();
+        }
+
+        static void Mathmathmath()
+        {
+            Algoritm algoritm1 = new Algoritm();
+            algoritm1.Average(1, 2, 3);
+
+          //  algoritm1.Verif(4,2,2,10,2,292,1);
+
+            //algoritm1.SumaNrPrim();
+
+            
         }
 
         static void PlayTime()
@@ -84,6 +98,8 @@ namespace Lab5.ConsoleApp
             
             
         }
+
+        
 
         #region Encapsulation
 

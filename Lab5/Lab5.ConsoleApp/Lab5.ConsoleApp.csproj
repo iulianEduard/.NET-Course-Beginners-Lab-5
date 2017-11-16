@@ -46,6 +46,7 @@
     <Compile Include="3in1\Plane.cs" />
     <Compile Include="3in1\Robot.cs" />
     <Compile Include="3in1\Toy.cs" />
+    <Compile Include="Alg\Algoritm.cs" />
     <Compile Include="Autovehicul\Autovehicul.cs" />
     <Compile Include="Autovehicul\Motorcycle.cs" />
     <Compile Include="Autovehicul\Truck.cs" />

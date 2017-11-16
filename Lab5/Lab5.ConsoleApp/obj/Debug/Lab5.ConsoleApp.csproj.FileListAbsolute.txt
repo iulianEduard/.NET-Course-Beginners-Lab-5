@@ -8,7 +8,7 @@ F:\Work\.NET Course - Beginners\Lab 5\.NET-Course-Beginners-Lab-5\Lab5\Lab5.Cons
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\bin\Debug\Lab5.ConsoleApp.exe.config
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\bin\Debug\Lab5.ConsoleApp.exe
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\bin\Debug\Lab5.ConsoleApp.pdb
-D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\obj\Debug\Lab5.ConsoleApp.csprojResolveAssemblyReference.cache
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\obj\Debug\Lab5.ConsoleApp.csproj.CoreCompileInputs.cache
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\obj\Debug\Lab5.ConsoleApp.exe
 D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\obj\Debug\Lab5.ConsoleApp.pdb
+D:\.NET-Course-Beginners-Lab-5\Lab5\Lab5.ConsoleApp\obj\Debug\Lab5.ConsoleApp.csprojResolveAssemblyReference.cache
